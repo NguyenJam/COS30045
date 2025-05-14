@@ -1,0 +1,47 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 40px;
+}
+
+h1 {
+  font-style: italic;
+  color: darkslategrey;
+}
+
+h2 {
+  color: lightslategrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: lightgrey;
+  color: white;
+  border-radius: 3px;
+  transition: ease-in 0.3s;
+}
+
+button:hover {
+  background-color: darkgrey;
+}
+
+button.active {
+  background-color: darkslateblue;
+}
+
+footer {
+  margin-bottom: 40px;
+  color: gray;
+}

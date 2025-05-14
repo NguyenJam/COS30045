@@ -1,0 +1,28 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 40px;
+}
+
+h1 {
+  font-style: italic;
+  color: darkslategrey;
+}
+
+h2 {
+  color: lightslategrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+footer {
+  margin-bottom: 40px;
+  color: gray;
+}
