@@ -2,11 +2,13 @@ function switchImage(year) {
     const image = document.getElementById("charts");
     const caption = document.getElementById("caption");
     const buttons = document.querySelectorAll("button");
-
+    // Remove the "active" class from all buttons
     buttons.forEach(button => button.classList.remove("active"));
 
     let src, alt, text;
 
+    // Set the image source, alt text, and caption based on the selected year
+    // and update the active button
     if (year === "2019") {
         src = "pet_2019.png";
         alt = "Pet ownership in 2019";
@@ -24,6 +26,8 @@ function switchImage(year) {
         buttons[2].classList.add("active");
     }
 
+    // Update the image and caption
+    // Set the image source, alt text, and caption based on the selected year
     image.src = src;
     image.alt = alt;
     caption.innerHTML = text;

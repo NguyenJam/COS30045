@@ -67,13 +67,14 @@
 			return d[0] + 5;
 		})
 		.attr("y", function (d) {
-			var radius = (typeof d[2] !== "undefined") ? d[2] : 2;
-        		return d[1] - radius - 2;
+			var radius = (typeof d[2] !== "undefined") ? d[2] : 2; 	// If radius is not specified, use default value
+			// Adjust y position based on radius
+        	return d[1] - radius - 2;
 		})
 		.attr("font-family", "sans-serif")
 		.attr("font-size", "11px")
 		.attr("fill", function (d, i) {
-			return (typeof d[2] != "undefined") ? "red" : "black";
+			return (typeof d[2] != "undefined") ? "red" : "black";	// Change color based on radius
 		})
 		.attr("text-anchor", "start");
 

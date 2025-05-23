@@ -47,7 +47,7 @@ function init() {
                 return i * (w / wombatSightings.length) + (w / wombatSightings.length - padding) / 2;
             })
             .attr("y", function (d) {
-                if (d.wombats * 4 < 20) {
+                if (d.wombats * 4 < 20) {       // If the bar is short, adjust the text position to be above the bar
                     return h - d.wombats * 4 - 5;
                 }
                 return h - d.wombats * 4 + 15;

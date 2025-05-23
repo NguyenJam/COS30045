@@ -34,7 +34,7 @@
 		.enter()
 		.append("rect")
 		.attr("x", function (d, i) {
-			return i * (w / dataset.length);
+			return i * (w / dataset.length); 
 		})
 		.attr("y", function (d) {
 			return h - d * 4;
@@ -58,7 +58,7 @@
 			return i * (w / dataset.length) + (w / dataset.length - padding) / 2;
 		})
 		.attr("y", function (d) {
-			if (d * 4 < 20) {
+			if (d * 4 < 20) { 		// If the bar is short, reposition the text to be above the bar
 				return h - d * 4 - 5;
 			}
 			return h - d * 4 + 15;
@@ -67,7 +67,7 @@
 		.attr("font-size", "11px")
 		.attr("fill", function (d) {
 			if (d * 4 < 20) {
-				return "black";
+				return "black";		// If the bar is short, change the color to black for more clarity
 			}
 			return "white";
 		})
